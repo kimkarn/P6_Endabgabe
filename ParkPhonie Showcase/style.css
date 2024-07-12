@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    position: relative;
+    width: 1500px;
+    height: 1000px;
+    border: 1px solid #000;
+}
+
+.area {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+}
+
+.area img {
+    width: 150%;
+    height: 150%;
+}
+
+#area1 { top: 650px; left: 1100px; }
+#area2 { top: 400px; left: 300px; }
+#area3 { top: 100px; left: 800px; }
+#area4 { top: 80px; left: 50px; }
+#area5 { top: 50px; left: 450px; }
+#area6 { top: 10px; left: 1100px; }
+#area7 { top: 450px; left: 750px; }
+#area8 { top: 650px; left: 20px; }
+#area9 { top: 660px; left: 480px; }
+#area10 { top: 330px; left: 1100px; }
+#area11 { top: 330px; left: 1100px; }
+#area12 { top: 330px; left: 1100px; }
+#area13 { top: 330px; left: 1100px; }
+#area14 { top: 330px; left: 1100px; }
+
+.draggable {
+    width: 100px;
+    height: 140px;
+    position: absolute;
+    cursor: grab;
+}
