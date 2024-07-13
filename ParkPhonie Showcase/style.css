@@ -6,13 +6,17 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #aec395; /* Hintergrundfarbe Grün setzen */
+}
+
+p {
+    font-weight: bold; /* Fettschrift für den Paragraphen */
 }
 
 #container {
     position: relative;
-    width: 1500px;
-    height: 1000px;
-    border: 1px solid #000;
+    width: 1200px;
+    height: 800px;
 }
 
 .area {
@@ -23,28 +27,29 @@ body {
 }
 
 .area img {
-    width: 150%;
-    height: 150%;
+    width: 130%;
+    height: 130%;
 }
 
-#area1 { top: 650px; left: 1100px; }
-#area2 { top: 400px; left: 300px; }
-#area3 { top: 100px; left: 800px; }
-#area4 { top: 80px; left: 50px; }
-#area5 { top: 50px; left: 450px; }
-#area6 { top: 10px; left: 1100px; }
-#area7 { top: 450px; left: 750px; }
-#area8 { top: 650px; left: 20px; }
-#area9 { top: 660px; left: 480px; }
-#area10 { top: 330px; left: 1100px; }
-#area11 { top: 330px; left: 1100px; }
-#area12 { top: 330px; left: 1100px; }
-#area13 { top: 330px; left: 1100px; }
-#area14 { top: 330px; left: 1100px; }
+#area1 { top: 540px; left: 730px; }
+#area2 { top: 270px; left: 200px; }
+#area3 { top: 70px; left: 660px; }
+#area4 { top: 10px; left: 30px; }
+#area5 { top: 40px; left: 400px; }
+#area6 { top: 10px; left: 920px; }
+#area7 { top: 530px; left: 350px; }
+#area8 { top: 500px; left: 20px; }
+#area9 { top: 300px; left: 500px; }
+
+#area10 { top: 270px; left: 850px; }
+#area11 { top: 270px; left: 900px; }
+#area12 { top: 290px; left: 820px; }
+#area13 { top: 300px; left: 880px; }
+#area14 { top: 340px; left: 890px; }
 
 .draggable {
-    width: 100px;
-    height: 140px;
+    width: 80px;
+    height: 120px;
     position: absolute;
     cursor: grab;
 }

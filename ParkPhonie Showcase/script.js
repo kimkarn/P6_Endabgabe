@@ -62,33 +62,33 @@ function checkAudio() {
         const imgLeft = parseInt(img.style.left);
         const imgTop = parseInt(img.style.top);
 
-        if (imgLeft >= 1100 && imgLeft < 1300 && imgTop >= 650 && imgTop < 850) {
+        if (imgLeft >= 730 && imgLeft < 930 && imgTop >= 480 && imgTop < 700) {
             counts.area1++;
-        } else if (imgLeft >= 300 && imgLeft < 500 && imgTop >= 400 && imgTop < 600) {
+        } else if (imgLeft >= 200 && imgLeft < 400 && imgTop >= 270 && imgTop < 470) {
             counts.area2++;
-        } else if (imgLeft >= 800 && imgLeft < 1000 && imgTop >= 100 && imgTop < 300) {
+        } else if (imgLeft >= 660 && imgLeft < 860 && imgTop >= 70 && imgTop < 270) {
             counts.area3++;
-        } else if (imgLeft >= 50 && imgLeft < 250 && imgTop >= 80 && imgTop < 280) {
+        } else if (imgLeft >= 30 && imgLeft < 230 && imgTop >= 10 && imgTop < 210) {
             counts.area4++;
-        } else if (imgLeft >= 450 && imgLeft < 650 && imgTop >= 50 && imgTop < 250) {
+        } else if (imgLeft >= 400 && imgLeft < 600 && imgTop >= 40 && imgTop < 240) {
             counts.area5++;
-        } else if (imgLeft >= 1100 && imgLeft < 1300 && imgTop >= 10 && imgTop < 210) {
+        } else if (imgLeft >= 920 && imgLeft < 1120 && imgTop >= 10 && imgTop < 210) {
             counts.area6++;
-        } else if (imgLeft >= 750 && imgLeft < 950 && imgTop >= 450 && imgTop < 650) {
+        } else if (imgLeft >= 350 && imgLeft < 550 && imgTop >= 480 && imgTop < 700) {
             counts.area7++;
-        } else if (imgLeft >= 20 && imgLeft < 220 && imgTop >= 650 && imgTop < 850) {
+        } else if (imgLeft >= 20 && imgLeft < 220 && imgTop >= 500 && imgTop < 700) {
             counts.area8++;
-        } else if (imgLeft >= 480 && imgLeft < 680 && imgTop >= 660 && imgTop < 860) {
+        } else if (imgLeft >= 500 && imgLeft < 700 && imgTop >= 300 && imgTop < 500) {
             counts.area9++;
-        } else if (imgLeft >= 1100 && imgLeft < 1300 && imgTop >= 330 && imgTop < 530) {
+        } else if (imgLeft >= 860 && imgLeft < 940 && imgTop >= 200 && imgTop < 280) {
             counts.area10++;
-        } else if (imgLeft >= 1100 && imgLeft < 1300 && imgTop >= 330 && imgTop < 530) {
+        } else if (imgLeft >= 1000 && imgLeft < 1100 && imgTop >= 200 && imgTop < 300) {
             counts.area11++;
-        } else if (imgLeft >= 1100 && imgLeft < 1300 && imgTop >= 330 && imgTop < 530) {
+        } else if (imgLeft >= 800 && imgLeft < 900 && imgTop >= 330 && imgTop < 440) {
             counts.area12++;
-        } else if (imgLeft >= 1100 && imgLeft < 1300 && imgTop >= 330 && imgTop < 530) {
+        } else if (imgLeft >= 980 && imgLeft < 1100 && imgTop >= 330 && imgTop < 420) {
             counts.area13++;
-        } else if (imgLeft >= 1100 && imgLeft < 1300 && imgTop >= 330 && imgTop < 530) {
+        } else if (imgLeft >= 950 && imgLeft < 1100 && imgTop >= 430 && imgTop < 530) {
             counts.area14++;
         }
     });
@@ -124,10 +124,12 @@ function updateAudio(position, count) {
         if (newVolume !== currentVolume) {
             audio.volume = newVolume;
         }
-    } else if (count > 3 && !currentlyPlaying[position]) {
-        audio.currentTime = 0;
-        audio.play();
-        currentlyPlaying[position] = true;
+    } else if (count > 3) {
+        if (!currentlyPlaying[position]) {
+            audio.currentTime = 0;
+            audio.play();
+            currentlyPlaying[position] = true;
+        }
     } else if (count === 0) {
         audio.pause();
         audio.currentTime = 0;
