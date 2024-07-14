@@ -2,16 +2,16 @@
 
 Der Proof of Concept für das Semesterprojekt ParkPhonie umfasst 3 Teile. 
 
-## Teil 1: ParkPhonieShowcase
+## Teil 1: ParkPhonie Showcase
 
-Hinter diesem Ordner verbirgt sich der Code für eine html Seite, über die man das Projekt selbst ausprobieren kann. Wenn man Personen auf Klangflächen zieht, werden verschiedene Klänge ausgelöst. Dadurch wird deutlich, dass jede einzelne Person den gesamten Klangraum beeinflusst. Die Abgabe des Codes dient als Dokumentation, die eigentliche Seite wird über ein privates Repo über onRender gehostet.
+Hinter diesem Ordner verbirgt sich der Code für eine html Seite, über die man das Projekt selbst ausprobieren kann. Wenn man Personen auf Klangflächen zieht, werden verschiedene Klänge ausgelöst. Dadurch wird deutlich, dass jede einzelne Person den gesamten Klangraum beeinflusst. Die Abgabe des Codes dient als Dokumentation, die eigentliche Seite wird über ein privates Repo über Render gehostet.
 
 Link zum ParkPhonie Showcase: https://parkphonie-showcase.onrender.com/
 
-## Teil 2: TouchDesigner-Audio Manipulation
-Dieser Ordner umfasst die Audio-Hand-Manipulation.toe sowie einige Audio Files zum ausprobieren. Durch das Auf und Ab bewegen der ersten Hand wird die Stärke eines Low-Pass Filters gesteuert. Durch das Auf und Ab bewegen der zweiten Hand wird die Geschwindigkeit der Audio File beeinflusst. Die Hände symbolisieren Personen, die auf einer Klangfläche stehen und zwei verschiedene Modifikationen auführen. Durch Zusammenarbeit und Ausprobieren, erhalten sie ihre gewünschten Klangeffekte.
+## Teil 2: Audio Manipulation
+Dieser Ordner umfasst die Audio-Hand-Manipulation.toe sowie einige Audiodateien zum ausprobieren. Durch das Auf und Ab bewegen der ersten Hand wird die Stärke eines Low-Pass Filters gesteuert. Durch das Auf und Ab bewegen der zweiten Hand wird die Geschwindigkeit der Audiodatei beeinflusst. Die Hände symbolisieren Personen, die auf einer Klangfläche stehen und zwei verschiedene Modifikationen auführen. Durch Zusammenarbeit und Ausprobieren, erhalten sie ihre gewünschten Klangeffekte.
 
-### Voraussetzungen
+### Voraussetzungen für die Inbetriebnahme
 - PC/Laptop
 - Webcam
 - TouchDesigner
@@ -39,12 +39,12 @@ Zum Tracken der Positionen der Hände wurde das MediaPipe Plugin verwendet. Die 
 <img src="webcam.png" alt="screenshot" width="400"/>
 
 
-6. Die AudioFiles können bei der Komponente audiofilesin ausgetauscht werden. Hierfür einfach auf das Plus drücken und Audios aus dem "audiofile" Ordner auswählen (natürlich können auch andere Audio Datein verwendet werden). 
+6. Die AudioFiles können bei der Komponente audiofilesin ausgetauscht werden. Hierfür einfach auf das Plus drücken und Audios aus dem "audiofile" Ordner auswählen (natürlich können auch andere Audiodatein verwendet werden). 
 
 <img src="audiofilein.png" alt="screenshot" width="400"/>
 
-## Teil 3: TouchDesigner-ShowModus
-In der Datei "Partikel-ShowModus.toe" wird ein Beispiel Klangraum durch eine audioreaktive Partikelwolke visualisiert. Das symbolisiert den Show-Modus von ParkPhonie. Um die Datei öffnen zu können, braucht man TouchDesigner.
+## Teil 3: Show-Modus
+In der Datei "Partikel-ShowModus.toe" wird ein Beispiel Klangraum durch eine audioreaktive Partikelwolke visualisiert. Das symbolisiert den Show-Modus von ParkPhonie. Um die Datei öffnen zu können, muss TouchDesigner installiert und die zwei Dateien aus dem Repo heruntergeladen worden sein.
 
 _________
 
